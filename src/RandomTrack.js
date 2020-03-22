@@ -11,15 +11,36 @@ function RandomTrack() {
         filterByFormula: "{rand} = '"+ randomRand +"'"
     }).eachPage(function page(records, fetchNextPage) {
         records.forEach(function(record) {
-            var title = record.get('prettyTitle');
-            console.log('Title:', title );
-            console.log(randomRand);
-            localStorage.setItem('title', title);
-
+            var trackID1 = record.get('trackID');
+            var title1 = record.get('prettyTitle');
+            var orquestaAll = record.get('orquesta');
+            var singerAll = record.get('singer');
+            var year1 = record.get('year');
+            var yearLower = year1 - 3;
+            var yearUpper = year1 + 3;
+            console.log("1. " + orquestaAll + " - " + singerAll + " - " + year1 + " - " + title1 );
+            localStorage.setItem('title', title1);
+//get more tracks
+            base('Tracks').select({
+                maxRecords: 10,
+                view: "All tracks",
+                filterByFormula: "AND(SEARCH('"+ singerAll +"',{singer}),'"+ orquestaAll +"'={orquesta},'"+ yearUpper +"'>={year},'"+ yearLower +"'<={year},'"+ trackID1 +"'!={trackID})"
+            }).eachPage(function page(records, fetchNextPage) {
+                records.forEach(function(record) {
+                    console.log(record.get('orquesta') + " - " + record.get('singer') + " - " + record.get('year') + " - " + record.get('prettyTitle'));
+                });
+                fetchNextPage();
+              },
+                  function done(err) {
+                  if (err) { console.error(err); return; }
+              }
+            );
+// end get more tracks
         });
         fetchNextPage();
 
-  }, function done(err) {
+  },
+      function done(err) {
       if (err) { console.error(err); return; }
   }
 );
