@@ -8,7 +8,7 @@ This is a new project. I'm homebound during the pandemic, so want to do somethin
 - [x] Distill my last 10+ years' archives of milonga/encuentro/festival playlists into known-good tango tracks
 - [x] Put those into a [spreadsheet](https://docs.google.com/spreadsheets/d/1Jngt-ChzwgPwuPkv4jmfI781nqLGEg2UC7Ef8NS_eBg/edit?usp=sharing) and pull out the singer, orquesta, year, dance style, etc for future databasin'
 - [x] Query the Spotify API to get the Spotify URI references for each of those tracks
-- [ ] Pseudocode the [logic](https://github.com/jessicaschilling/eterna-milonga/issues/2) for building tandas that obey The Tango Rules™
+- [x] Pseudocode the [logic](https://github.com/jessicaschilling/eterna-milonga/issues/2) for building tandas that obey the basics of The Tango Rules™
 - [ ] Pseudocode the logic for building those tandas into milonga-length playlists that keep orquestas sanely spaced
 - [ ] Figure out the best means for getting abovementioned spreadsheet into ... some kind of relational database ... that will both be germane to this project and will teach me things I can use later
 - [ ] Real-code the tanda logic (output just as a list of Spotify URIs)
