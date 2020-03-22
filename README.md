@@ -10,7 +10,7 @@ This is a new project. I'm homebound during the pandemic, so want to do somethin
 - [x] Query the Spotify API to get the Spotify URI references for each of those tracks
 - [x] Pseudocode the [logic](https://github.com/jessicaschilling/eterna-milonga/issues/2) for building tandas that obey the basics of The Tango Rules™
 - [x] Pseudocode the [logic](https://github.com/jessicaschilling/eterna-milonga/issues/3) for building those tandas into milonga-length playlists that keep orquestas sanely spaced
-- [ ] Figure out the best means for getting abovementioned spreadsheet into ... some kind of relational database ... that will both be germane to this project and will teach me things I can use later
+- [ ] Figure out the best means for getting abovementioned spreadsheet into ... some kind of [relational database](https://airtable.com/shrCrtSUHsEsM5wrf) ... that will both be germane to this project and will teach me things I can use later
 - [ ] Real-code the tanda logic (output just as a list of Spotify URIs)
 - [ ] Real-code the playlist logic (output just as a list of Spotify URIs)
 - [ ] Learn how to feed Spotify a list of URIs and get a playlist back in return
