@@ -23,4 +23,4 @@ This is a new project. I'm homebound during the pandemic, so want to do somethin
 
 ## License
 
-[GNU General Public License v3.0](LICENSE.md)
+[MIT](LICENSE.md)
