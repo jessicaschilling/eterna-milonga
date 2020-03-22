@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Eterna Milonga
+          Eterna Milonga: Build a random tanda!
         </p>
         <RandomTrack />
       </header>
