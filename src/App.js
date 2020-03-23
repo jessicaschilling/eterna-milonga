@@ -11,6 +11,9 @@ function App() {
           Eterna Milonga: Build a random tanda!
         </h2>
         <TandaBuilder />
+        <p>
+          <em>Reload this page to get another tanda.</em>
+        </p> 
       </header>
     </div>
 

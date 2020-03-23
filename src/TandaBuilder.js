@@ -41,9 +41,9 @@ function TandaBuilder() {
                   // Then shuffle the array of complimentary trackIDs
                   const shuffledTrackIDFullList = trackIDFullList.sort(() => 0.5 - Math.random());
                   // Then choose the first 3 of that shuffled array
-                  let selected = shuffledTrackIDFullList.slice(0, 3);
-                  console.log("SELECTED SPOTIFY IDS: " + selected);
-                  localStorage.setItem('tanda', selected);
+                  let selectedTrackIDs = shuffledTrackIDFullList.slice(0, 3);
+                  console.log("SELECTED SPOTIFY IDS: " + selectedTrackIDs);
+                  localStorage.setItem('tanda', selectedTrackIDs);
               }
             );
             // end get more tracks
@@ -56,7 +56,22 @@ function TandaBuilder() {
       if (err) { console.error(err); return; }
   }
 );
-  return (<p>Seed: {localStorage.getItem('title')}<br/>IDs: {localStorage.getItem('tanda')}</p>);
+
+  var tandaSeedSong = localStorage.getItem('title');
+  var tandaTrackIDsAsString = localStorage.getItem('tanda');
+  var tandaTrackIDs = tandaTrackIDsAsString.split(",");
+
+  return (
+    <p>
+    <em>Seed song: {tandaSeedSong}</em>
+    <br/>
+    Song 1: <a href={ 'https://open.spotify.com/track/' + tandaTrackIDs[0] } target="_blank" rel="noopener noreferrer">{tandaTrackIDs[0]}</a>
+    <br/>
+    Song 2: <a href={ 'https://open.spotify.com/track/' + tandaTrackIDs[1] } target="_blank" rel="noopener noreferrer">{tandaTrackIDs[1]}</a>
+    <br/>
+    Song 3: <a href={ 'https://open.spotify.com/track/' + tandaTrackIDs[2] } target="_blank" rel="noopener noreferrer">{tandaTrackIDs[2]}</a>
+    </p>
+  );
 }
 
 export default TandaBuilder;
