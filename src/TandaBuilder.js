@@ -4,7 +4,7 @@ var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keykS9z272dhleMla'}).base('appnR9FrKCD0OV7Q9');
 var randomRand = Math.floor(Math.random() * 856) + 1;
 
-function RandomTrack() {
+function TandaBuilder() {
     console.log("NOW BUILDING A TANDA :)");
     base('Tracks').select({
         maxRecords: 1,
@@ -43,6 +43,7 @@ function RandomTrack() {
                   // Then choose the first 3 of that shuffled array
                   let selected = shuffledTrackIDFullList.slice(0, 3);
                   console.log("SELECTED SPOTIFY IDS: " + selected);
+                  localStorage.setItem('tanda', selected);
               }
             );
             // end get more tracks
@@ -55,7 +56,7 @@ function RandomTrack() {
       if (err) { console.error(err); return; }
   }
 );
-  return <p>{localStorage.getItem('title')}</p>;
+  return (<p>Seed: {localStorage.getItem('title')}<br/>IDs: {localStorage.getItem('tanda')}</p>);
 }
 
-export default RandomTrack;
+export default TandaBuilder;

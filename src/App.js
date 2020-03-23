@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import RandomTrack from './RandomTrack';
+import TandaBuilder from './TandaBuilder';
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <h2>
           Eterna Milonga: Build a random tanda!
-        </p>
-        <RandomTrack />
+        </h2>
+        <TandaBuilder />
       </header>
     </div>
 
