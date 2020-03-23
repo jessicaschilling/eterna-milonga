@@ -1,20 +1,22 @@
 import React from 'react';
-import './App.css';
 import TandaBuilder from './TandaBuilder';
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="tandaPlayer">
+        <h1>
+          Eterna Milonga
+        </h1>
         <h2>
-          Eterna Milonga: Build a random tanda!
+          Build a random tanda!
         </h2>
-        <TandaBuilder />
-        <p>
-          <em>Reload this page to get another tanda.</em>
-        </p> 
-      </header>
+      <TandaBuilder />
+      <p>
+        Reload this page to get another tanda.
+        <br/>
+        <small>Made with &#128155; by <a href="https://www.jessicaschilling.com" target="_blank" rel="noopener noreferrer">Jessica Schilling</a> | <a href="https://github.com/jessicaschilling/eterna-milonga" target="_blank" rel="noopener noreferrer">GitHub</a></small>
+      </p>
     </div>
 
   );

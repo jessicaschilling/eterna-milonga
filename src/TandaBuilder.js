@@ -1,4 +1,5 @@
 import React from 'react';
+import Iframe from 'react-iframe';
 
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keykS9z272dhleMla'}).base('appnR9FrKCD0OV7Q9');
@@ -57,20 +58,21 @@ function TandaBuilder() {
   }
 );
 
-  var tandaSeedSong = localStorage.getItem('title');
   var tandaTrackIDsAsString = localStorage.getItem('tanda');
   var tandaTrackIDs = tandaTrackIDsAsString.split(",");
 
   return (
-    <p>
-    <em>Seed song: {tandaSeedSong}</em>
-    <br/>
-    Song 1: <a href={ 'https://open.spotify.com/track/' + tandaTrackIDs[0] } target="_blank" rel="noopener noreferrer">{tandaTrackIDs[0]}</a>
-    <br/>
-    Song 2: <a href={ 'https://open.spotify.com/track/' + tandaTrackIDs[1] } target="_blank" rel="noopener noreferrer">{tandaTrackIDs[1]}</a>
-    <br/>
-    Song 3: <a href={ 'https://open.spotify.com/track/' + tandaTrackIDs[2] } target="_blank" rel="noopener noreferrer">{tandaTrackIDs[2]}</a>
-    </p>
+    <div className="tandaBoxesContainer">
+      <div className="tandaBox">
+      <iframe src={ 'https://open.spotify.com/embed/track/' + tandaTrackIDs[0] } width="240" height="254" frameBorder="0" allowtransparency="true" title="Tanda Song 1"></iframe>
+      </div>
+      <div className="tandaBox">
+      <iframe src={ 'https://open.spotify.com/embed/track/' + tandaTrackIDs[1] } width="240" height="254" frameBorder="0" allowtransparency="true" title="Tanda Song 2"></iframe>
+      </div>
+      <div className="tandaBox">
+      <iframe src={ 'https://open.spotify.com/embed/track/' + tandaTrackIDs[2] } width="240" height="254" frameBorder="0" allowtransparency="true" title="Tanda Song 3"></iframe>
+      </div>
+    </div>
   );
 }
 
