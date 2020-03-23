@@ -14,10 +14,12 @@ function App() {
       <TandaBuilder />
       <p>
         Reload this page to get another tanda.
-        <br/>
-        <strong>Note!</strong> You must be logged in to Spotify for full songs to play.
-        <br/>
-        <small>Made with &#128155; by <a href="https://www.jessicaschilling.com" target="_blank" rel="noopener noreferrer">Jessica Schilling</a> | <a href="https://github.com/jessicaschilling/eterna-milonga" target="_blank" rel="noopener noreferrer">GitHub</a></small>
+      </p>
+      <p>
+        You must be logged in to Spotify for full songs to play. For best results, use a laptop or desktop computer instead of your phone.
+      </p>
+      <p>
+        <small>Made with <span role="img" aria-label="love">&#128155;</span> by <a href="https://www.jessicaschilling.com" target="_blank" rel="noopener noreferrer">Jessica Schilling</a> | <a href="https://github.com/jessicaschilling/eterna-milonga" target="_blank" rel="noopener noreferrer">GitHub</a></small>
       </p>
     </div>
 
