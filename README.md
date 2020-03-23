@@ -13,7 +13,7 @@ This is a new project. I'm homebound during the pandemic, so want to do somethin
 - [x] Figure out the best means for getting abovementioned spreadsheet into ... some kind of [relational database](https://airtable.com/shrCrtSUHsEsM5wrf) ... that will both be germane to this project and will teach me things I can use later
 - [x] Real-code the tanda logic (output just as a list of Spotify URIs)
 - [x] Create super-basic proof-of-concept UI with embedded Spotify iframes for single tanda at a time
-- [ ] Clean up the tanda logic to stop partial tandas from appearing in the UI (this happens when there aren't enough songs in the database to fulfill the tanda rules)
+- [ ] Clean up the tanda logic to stop partial tandas from appearing in the UI (this happens when there aren't enough songs in the database to fulfill the tanda rules) and ignore La Cumparsita for now
 - [ ] Atone for my JavaScript sins (anyone want to help?) and get the tanda logic to actually be robust
 - [ ] Real-code the playlist logic (output just as a list of Spotify URIs)
 - [ ] Learn how to feed Spotify a list of URIs and get a playlist back in return
