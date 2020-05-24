@@ -1,7 +1,9 @@
 # eterna-milonga: Eterna Milonga
 
-## Watch this space
-This is a new project. I'm homebound during the pandemic, so want to do something that teaches me some new stuff but also makes other homebound tanguer@s (aka Argentine tango dancers) a little happier at the same time.
+## Frozen in amber (for now) ...
+Got a little bit into this project and determined folks would rather have an actual streaming station than use Spotify. So, check out [Radio Tanda](https://github.com/jessicaschilling/radiotanda) for that, istead.
+
+I'd still love to flesh this out someday, or hand the idea over to someone else.
 
 ## The plan
 
