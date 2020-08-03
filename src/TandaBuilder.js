@@ -1,5 +1,4 @@
 import React from 'react';
-import Iframe from 'react-iframe';
 
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keykS9z272dhleMla'}).base('appnR9FrKCD0OV7Q9');
